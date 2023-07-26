@@ -4,7 +4,7 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
-import { Helmet } from "react-helmet"
+
 
 
 const inter = Inter({ subsets: ["latin"] })
