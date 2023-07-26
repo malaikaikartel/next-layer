@@ -5,7 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
 import Script from "next/script"
-import AdsComponent from "./AdsComponent"
+
+
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -39,6 +40,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
           </div>
           <Analytics />
         </ThemeProvider>
+<Script
+  async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+  strategy="afterInteractive"
+/>
 
 <AdsComponent dataAdSlot='X7XXXXXX5X' />
       </body>
