@@ -6,7 +6,13 @@ import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
 import Script from "next/script"
 import { Adsense } from "@ctrl/react-adsense"
+import { ScriptHTMLAttributes } from "react";
 
+const scriptAttributes: ScriptHTMLAttributes<HTMLScriptElement> = {
+  async: true,
+  src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6389784149267865",
+  crossOrigin: "anonymous"
+};
 
 
 
@@ -40,10 +46,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               </div>
             </header>
             <main>{children}</main>
-<script
- async: true,
-  src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6389784149267865",
-  crossOrigin: "anonymous"/>
+<HTMLScriptElement/>
           </div>
           <Analytics />
         </ThemeProvider>
