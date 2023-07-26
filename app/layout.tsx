@@ -4,7 +4,7 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
-import AdsComponent from "./AdsComponent";
+import {Adsense} from "@ctrl/react-adsense"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -36,6 +36,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
               </div>
             </header>
             <main>{children}</main>
+            <Adsense
+  client="ca-pub-6389784149267865"
+  slot="6486641123"
+  style={{ display: 'block' }}
+  data-ad-format="auto"
+  data-full-width-responsive="true"
+/>
           </div>
           <Analytics />
         </ThemeProvider>
