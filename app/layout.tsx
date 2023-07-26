@@ -4,7 +4,7 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
-
+import { Helmet } from 'react-helmet';
 
 
 const inter = Inter({ subsets: ["latin"] })
@@ -38,7 +38,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
               </div>
             </header>
             <main>{children}</main>
-  
+  <Helmet>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6389784149267865"
+     crossorigin="anonymous"/>
+</Helmet>
           
           <Analytics />
         </ThemeProvider>
