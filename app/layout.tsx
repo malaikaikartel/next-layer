@@ -4,7 +4,7 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet"
 
 
 const inter = Inter({ subsets: ["latin"] })
@@ -22,9 +22,11 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
 
-
+<helmet>
     <html lang="en">
-      
+      <head>
+
+</head>
       <body
         className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
       >
@@ -43,6 +45,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Analytics />
         </ThemeProvider>
       </body>
+
     </html>
+</helmet>
   )
 }
