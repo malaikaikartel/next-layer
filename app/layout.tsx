@@ -45,7 +45,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               </div>
             </header>
             <main>{children}</main>
-
+<script/>
           </div>
           <Analytics />
         </ThemeProvider>
