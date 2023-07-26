@@ -21,7 +21,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-<Helmet>
+
 
     <html lang="en">
       
@@ -40,13 +40,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
               </div>
             </header>
             <main>{children}</main>
-  
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6389784149267865"
-     crossorigin="anonymous"/>
           <Analytics />
         </ThemeProvider>
       </body>
     </html>
-</Helmet>
   )
 }
