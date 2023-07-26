@@ -21,6 +21,8 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
+<Helmet>
+
     <html lang="en">
       
       <body
@@ -31,21 +33,20 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <header>
               <div className="flex items-center justify-between">
                 <ModeToggle />
-                <nav className="ml-auto text-sm font-medium space-x-6">
+               <nav className="ml-auto text-sm font-medium space-x-6">
                   <Link href="/">Home</Link>
                   <Link href="/about">About</Link>
                 </nav>
               </div>
             </header>
             <main>{children}</main>
-  <Helmet>
+  
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6389784149267865"
      crossorigin="anonymous"/>
-</Helmet>
-          
           <Analytics />
         </ThemeProvider>
       </body>
     </html>
+</Helmet>
   )
 }
