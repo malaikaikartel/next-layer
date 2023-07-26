@@ -7,19 +7,6 @@ import { ModeToggle } from "@/components/mode-toggle"
 import Script from "next/script"
 import { Adsense } from "@ctrl/react-adsense"
 
-function Ads() {
-  return (
-    <div className="text-center adsbygoogle my-3">
-      <Adsense
-        client="ca-pub-6389784149267865"
-        slot="6486641123"
-        style={{ display: "block" }}
-        layout="in-article"
-        format="fluid"
-      />
-    </div>
-  );
-}
 
 
 const inter = Inter({ subsets: ["latin"] })
@@ -54,15 +41,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
           </div>
           <Analytics />
         </ThemeProvider>
-<Script
-  async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-  strategy="afterInteractive"
-/>
-<Adsense
-  client="ca-pub-6389784149267865"
-  slot="6486641123"
-/>
 
       </body>
     </html>
