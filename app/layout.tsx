@@ -38,7 +38,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           </div>
           <Analytics />
         </ThemeProvider>
-/>
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6389784149267865" crossorigin="anonymous" />
       </body>
     </html>
