@@ -22,7 +22,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
 
-<helmet>
+
     <html lang="en">
       <head>
 
@@ -47,6 +47,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
       </body>
 
     </html>
-</helmet>
+
   )
 }
