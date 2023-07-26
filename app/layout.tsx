@@ -46,7 +46,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   strategy="afterInteractive"
 />
 
-<AdsComponent dataAdSlot='X7XXXXXX5X' />
+
       </body>
     </html>
   )
