@@ -13,15 +13,8 @@ const scriptAttributes: ScriptHTMLAttributes<HTMLScriptElement> = {
   src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6389784149267865",
   crossOrigin: "anonymous"
 };
+ 
 
-useEffect(() => {
-  const ads = document.getElementsByClassName('adsbygoogle').length;
-  for (let i = 0; i < ads; i++) {
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (e) {}
-  }
-}, []);
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -52,12 +45,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               </div>
             </header>
             <main>{children}</main>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6389784149267865"
-     data-ad-slot="6486641123"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
+
           </div>
           <Analytics />
         </ThemeProvider>
