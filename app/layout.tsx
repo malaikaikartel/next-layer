@@ -18,6 +18,20 @@ interface RootLayoutProps {
   children: React.ReactNode
 }
 
+function Ads() {
+  return (
+    <div className="text-center adsbygoogle my-3">
+      <Adsense
+  client="ca-pub-6389784149267865"
+  slot="6486641123"
+  style={{ display: 'block' }}
+  data-ad-format="auto"
+  data-full-width-responsive="true" 
+      />
+    </div>
+  );
+}
+
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
@@ -37,13 +51,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               </div>
             </header>
             <main>{children}</main>
-    <Adsense
-  client="ca-pub-6389784149267865"
-  slot="6486641123"
-  style={{ display: 'block' }}
-  data-ad-format="auto"
-  data-full-width-responsive="true"
-/>
+  
           </div>
           <Analytics />
         </ThemeProvider>
